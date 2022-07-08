@@ -4,7 +4,7 @@ const dotenv = require("dotenv").config();
 const { router: todoRouter } = require("./Routes/todo");
 
 app.listen(process.env.SERVER_PORT, () => {
-  console.log(`The server is now running on port ${process.env.SERVER_PORT}`);
+  console.log(`The server is now running on port ${process.env.PORT}`);
 });
 
 app.use(express.text());
